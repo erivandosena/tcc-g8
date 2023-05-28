@@ -740,6 +740,7 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+			list-style-type: none;
 		}
 
 		ul.alt {
@@ -841,6 +842,7 @@ input, select, textarea {
 			ul.actions.fit.stacked {
 				width: 100%;
 			}
+
 
 		@media screen and (max-width: 480px) {
 
@@ -1350,6 +1352,7 @@ input, select, textarea {
 			#header nav ul li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
+				width: 200px;
 			}
 
 				#header nav ul li:first-child {
