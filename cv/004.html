@@ -7,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Currículo Online &mdash; Micael</title>
+	<title>Currículo Online &mdash; Renato</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -59,14 +59,297 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
-	<body style="background-image: url(../images/home-banner.jpg);">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-	<div style="margin-top: 100px;">
-		<div class="text-center">
-				<h2><span><a href="../index.html">Home</a></span></h2>
-			</p>
-		</div>
+	<style>
+
+	/* Header */
+
+	#header {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		max-width: 100%;
+		text-align: center;
+	}
+
+		#header > * {
+			-moz-transition: opacity 0.325s ease-in-out;
+			-webkit-transition: opacity 0.325s ease-in-out;
+			-ms-transition: opacity 0.325s ease-in-out;
+			transition: opacity 0.325s ease-in-out;
+			position: relative;
+			margin-top: 3.5rem;
+		}
+
+			#header > *:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: calc(-3.5rem - 1px);
+				left: calc(50% - 1px);
+				width: 1px;
+				height: calc(3.5rem + 1px);
+				background: #ffffff;
+			}
+
+		#header > :first-child {
+			margin-top: 0;
+		}
+
+			#header > :first-child:before {
+				display: none;
+			}
+
+		#header .logo {
+			width: 5.5rem;
+			height: 5.5rem;
+			line-height: 5.5rem;
+			border: solid 1px #ffffff;
+			border-radius: 100%;
+		}
+
+			#header .logo .icon:before {
+				font-size: 2rem;
+			}
+
+		#header .content {
+			border-style: solid;
+			border-color: #ffffff;
+			border-top-width: 1px;
+			border-bottom-width: 1px;
+			max-width: 100%;
+		}
+
+			#header .content .inner {
+				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				-moz-transition-delay: 0.25s;
+				-webkit-transition-delay: 0.25s;
+				-ms-transition-delay: 0.25s;
+				transition-delay: 0.25s;
+				padding: 3rem 2rem;
+				max-height: 40rem;
+				overflow: hidden;
+			}
+
+				#header .content .inner > :last-child {
+					margin-bottom: 0;
+				}
+
+			#header .content p {
+				text-transform: uppercase;
+				letter-spacing: 0.2rem;
+				font-size: 0.8rem;
+				line-height: 2;
+			}
+
+		#header nav ul {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			margin-bottom: 0;
+			list-style: none;
+			padding-left: 0;
+			border: solid 1px #ffffff;
+			border-radius: 4px;
+		}
+
+			#header nav ul li {
+				padding-left: 0;
+				border-left: solid 1px #ffffff;
+				width: 200px;
+			}
+
+				#header nav ul li:first-child {
+					border-left: 0;
+				}
+
+				#header nav ul li a {
+					display: block;
+					min-width: 7.5rem;
+					height: 2.75rem;
+					line-height: 2.75rem;
+					padding: 0 1.25rem 0 1.45rem;
+					text-transform: uppercase;
+					letter-spacing: 0.2rem;
+					font-size: 0.8rem;
+					border-bottom: 0;
+				}
+
+					#header nav ul li a:hover {
+						background-color: rgba(255, 255, 255, 0.075);
+					}
+
+					#header nav ul li a:active {
+						background-color: rgba(255, 255, 255, 0.175);
+					}
+
+		#header nav.use-middle:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: calc(50% - 1px);
+			width: 1px;
+			height: 100%;
+			background: #ffffff;
+		}
+
+		#header nav.use-middle ul li.is-middle {
+			border-left: 0;
+		}
+
+		body.is-article-visible #header {
+			-moz-transform: scale(0.95);
+			-webkit-transform: scale(0.95);
+			-ms-transform: scale(0.95);
+			transform: scale(0.95);
+			-moz-filter: blur(0.1rem);
+			-webkit-filter: blur(0.1rem);
+			-ms-filter: blur(0.1rem);
+			filter: blur(0.1rem);
+			opacity: 0;
+		}
+
+		body.is-preload #header {
+			-moz-filter: blur(0.125rem);
+			-webkit-filter: blur(0.125rem);
+			-ms-filter: blur(0.125rem);
+			filter: blur(0.125rem);
+		}
+
+			body.is-preload #header > * {
+				opacity: 0;
+			}
+
+			body.is-preload #header .content .inner {
+				max-height: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+				opacity: 0;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			#header .content p br {
+				display: none;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#header > * {
+				margin-top: 2rem;
+			}
+
+				#header > *:before {
+					top: calc(-2rem - 1px);
+					height: calc(2rem + 1px);
+				}
+
+			#header .logo {
+				width: 4.75rem;
+				height: 4.75rem;
+				line-height: 4.75rem;
+			}
+
+				#header .logo .icon:before {
+					font-size: 1.75rem;
+				}
+
+			#header .content .inner {
+				padding: 2.5rem 1rem;
+			}
+
+			#header .content p {
+				line-height: 1.875;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#header {
+				padding: 1.5rem 0;
+			}
+
+				#header .content .inner {
+					padding: 2.5rem 0;
+				}
+
+				#header nav ul {
+					-moz-flex-direction: column;
+					-webkit-flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
+					min-width: 10rem;
+					max-width: 100%;
+				}
+
+					#header nav ul li {
+						border-left: 0;
+						border-top: solid 1px #ffffff;
+					}
+
+						#header nav ul li:first-child {
+							border-top: 0;
+						}
+
+						#header nav ul li a {
+							height: 3rem;
+							line-height: 3rem;
+							min-width: 0;
+							width: 100%;
+						}
+
+				#header nav.use-middle:after {
+					display: none;
+				}
+
+		}
+
+	</style>
+
+	</head>
+	<body style="background-image: linear-gradient(rgba(39, 34, 34, 0.790), rgba(0, 0, 0, 0.9)), url(../images/home-banner.jpg);">
+
+	<div style="margin-top: 10px; padding-bottom: 0px;">
+	<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<a href="../index.html#about">
+					<span class="icon"><i class="fas fa-gem"></i></span>
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../index.html#work">Currículos</a></li>
+				</ul>
+			</nav>
+		</header>
 	</div>
 	
 	<div id="fh5co-main">
@@ -75,19 +358,21 @@
 				<li class="active"><a href="#" data-tab="1"><span class="icon icon-glass"></span><span class="menu-text">Perfil Profissional</span></a></li>
 				<li><a href="#" data-tab="2"><span class="icon icon-graduation-cap"></span><span class="menu-text">Formação Acadêmica</span></a></li>
 				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Experiência</span></a></li>
-				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Habilidades</span></a></li>
+				<!-- <li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Habilidades</span></a></li> -->
 			</ul>
 			<div class="fh5co-tab-content active" data-content="1">
 				<div class="fh5co-content-inner text-center">
 					<div class="row row-bottom-padded-sm">
 						<div class="col-md-12">
 							<figure>
-								<img src="images/profile_img4.png" alt="Micael">
+								<img src="images/profile_img4.png" alt="Renato">
 							</figure>
-							<h1>Aluno</h1>
-							<p>???, ???. </p>
+							<h1>Renato Soares da Silva</h1>
+							<p>Técnico de Informática com grande experiência no desenvolvimento de técnicas de resolução de problemas, execução de reparações e instalação de sistemas operacionais Mac e Windows. 
+								Buscando conhecimento e aprendizado em ferramentas Cloud, visando a redução de custos e aumento de desempenho para isso estou em busca de uma certificação AWS Cloud Practitioner e almejo novas oportunidades de ingressar no mercado como Estagiário ou Analista de Cloud Jr.</p>
 						</div>
 					</div>
+
 					<!--
 					<div class="row">
 						<div class="col-md-12 fh5co-counter">
@@ -98,15 +383,17 @@
 							</div>
 						</div>
 					</div>
+					-->
 
 					<ul class="fh5co-social">
-						<li><a href="#"><i class="icon-envelope"></i></a></li>
+						<li><a href="mailto:renato.silvas@gmail.com"><i class="icon-envelope"></i></a></li>
+						<li><a href="linkedin.com/in/renato-soares-da-silva-7b528266" target="_blank"><i class="icon-linkedin"></i></a></li>
+						<!--
 						<li><a href="#"><i class="icon-twitter"></i></a></li>
 						<li><a href="#"><i class="icon-instagram"></i></a></li>
 						<li><a href="#"><i class="icon-google"></i></a></li>
-						<li><a href="#"><i class="icon-linkedin"></i></a></li>
+						-->
 					</ul>
-					-->
 				</div>
 			</div>
 			<div class="fh5co-tab-content" data-content="2">
@@ -120,22 +407,20 @@
 									<i class="icon-graduation-cap"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>05/2022 &mdash; 06/2024</h2>
-									<p>???.</p>
+									<h2> &mdash; </h2>
+									<p>Graduação (Bacharelado) em Sistemas de Informação - instituição-UDF - Cursando 8º semestre</p>
 								</div>
 							</div>
 
-							<!--
 							<div class="fh5co-feature">
 								<div class="fh5co-icon">
 									<i class="icon-graduation-cap"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>2008-2012</h2>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
+									<h2> &mdash; </h2>
+									<p>Técnico em Telecomunicaçóes - instituição - ETB - Escola Técnica de Brasilia.</p>
 								</div>
 							</div>
-							-->
 
 						</div>
 						
@@ -154,10 +439,64 @@
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>05/2022 &mdash; Atual</h2>
-									<h3>??</h3>
-									<h3>??</h3>
-									<p>??.</p>
+									<h2>11/2022 &mdash; Atual</h2>
+									<h3>DNIT - Empresa Qintess</h3>
+									<h3>Técnico de Service Desk Junior</h3>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>06/2022 &mdash; 11/2022</h2>
+									<h3>TRF - Empresa Qintess</h3>
+									<h3>Analista de Suporte Tecnico - N1</h3>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>09/2021 &mdash; 06/2022</h2>
+									<h3>Mitra Arquidiocesana de Brasilia</h3>
+									<h3>Lider Técnico</h3>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2017 &mdash; 2021</h2>
+									<h3>AAFIT-Associação dos Auditores do DF</h3>
+									<h3>Supervidor Administrativo e Analista de TI</h3>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2014 &mdash; 2017</h2>
+									<h3>GDF - Governo do Distrito Federal</h3>
+									<h3>Chefe do Nucleo de Informatica</h3>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2001 &mdash; 2021</h2>
+									<h3>Ministerio da Justiça - Politec - Solução SE</h3>
+									<h3>Técnico em todos os Niveis e Lider de equipe</h3>
 								</div>
 							</div>
 
@@ -166,27 +505,14 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="fh5co-tab-content" data-content="4">
 				<div class="fh5co-content-inner">
 					<div class="row">
 						<div class="col-md-12">
-							<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="50"><span><strong>?</strong>50%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="35"><span><strong>?</strong>35%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="50"><span><strong>?</strong>50%</span></div>
-						</div>
-
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="60"><span><strong>?</strong>60%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="35"><span><strong>?</strong>35%</span></div>
+							<div class="chart" data-percent="0.1"><span><strong>?</strong>0%</span></div>
 						</div>
 
 						<!--
@@ -197,6 +523,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
 		<footer id="fh5co-footer">
 			<div class="row">

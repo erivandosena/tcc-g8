@@ -33,13 +33,13 @@ body {
 }
 
 a {
-  color: #17e7a4;
+  color: #ffffff;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #17e7a4;
+  color: #ffffff;
   outline: none;
 }
 
@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   content: "";
   height: 0;
-  background: #17e7a4;
+  background: #83838355;
   z-index: -1;
   top: 0;
   left: 0;
