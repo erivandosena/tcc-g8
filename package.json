@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-website-tcc",
+  "version": "1.0.0",
+  "description": "nodejs image website",
+  "author": "Erivando Sena <erivandosena@gmail.com>",
+  "license": "MIT",
+  "main": "app.js",
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express"
+  ],
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

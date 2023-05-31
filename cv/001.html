@@ -59,19 +59,301 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
-	<body style="background-image: url(../images/home-banner.jpg);">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-	<div style="margin-top: 100px;">
-		<div class="text-center">
-				<h2><span><a href="../index.html">Home</a></span></h2>
-			</p>
-		</div>
+	<style>
+
+	/* Header */
+
+	#header {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		max-width: 100%;
+		text-align: center;
+	}
+
+		#header > * {
+			-moz-transition: opacity 0.325s ease-in-out;
+			-webkit-transition: opacity 0.325s ease-in-out;
+			-ms-transition: opacity 0.325s ease-in-out;
+			transition: opacity 0.325s ease-in-out;
+			position: relative;
+			margin-top: 3.5rem;
+		}
+
+			#header > *:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: calc(-3.5rem - 1px);
+				left: calc(50% - 1px);
+				width: 1px;
+				height: calc(3.5rem + 1px);
+				background: #ffffff;
+			}
+
+		#header > :first-child {
+			margin-top: 0;
+		}
+
+			#header > :first-child:before {
+				display: none;
+			}
+
+		#header .logo {
+			width: 5.5rem;
+			height: 5.5rem;
+			line-height: 5.5rem;
+			border: solid 1px #ffffff;
+			border-radius: 100%;
+		}
+
+			#header .logo .icon:before {
+				font-size: 2rem;
+			}
+
+		#header .content {
+			border-style: solid;
+			border-color: #ffffff;
+			border-top-width: 1px;
+			border-bottom-width: 1px;
+			max-width: 100%;
+		}
+
+			#header .content .inner {
+				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				-moz-transition-delay: 0.25s;
+				-webkit-transition-delay: 0.25s;
+				-ms-transition-delay: 0.25s;
+				transition-delay: 0.25s;
+				padding: 3rem 2rem;
+				max-height: 40rem;
+				overflow: hidden;
+			}
+
+				#header .content .inner > :last-child {
+					margin-bottom: 0;
+				}
+
+			#header .content p {
+				text-transform: uppercase;
+				letter-spacing: 0.2rem;
+				font-size: 0.8rem;
+				line-height: 2;
+			}
+
+		#header nav ul {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			margin-bottom: 0;
+			list-style: none;
+			padding-left: 0;
+			border: solid 1px #ffffff;
+			border-radius: 4px;
+		}
+
+			#header nav ul li {
+				padding-left: 0;
+				border-left: solid 1px #ffffff;
+				width: 200px;
+			}
+
+				#header nav ul li:first-child {
+					border-left: 0;
+				}
+
+				#header nav ul li a {
+					display: block;
+					min-width: 7.5rem;
+					height: 2.75rem;
+					line-height: 2.75rem;
+					padding: 0 1.25rem 0 1.45rem;
+					text-transform: uppercase;
+					letter-spacing: 0.2rem;
+					font-size: 0.8rem;
+					border-bottom: 0;
+				}
+
+					#header nav ul li a:hover {
+						background-color: rgba(255, 255, 255, 0.075);
+					}
+
+					#header nav ul li a:active {
+						background-color: rgba(255, 255, 255, 0.175);
+					}
+
+		#header nav.use-middle:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: calc(50% - 1px);
+			width: 1px;
+			height: 100%;
+			background: #ffffff;
+		}
+
+		#header nav.use-middle ul li.is-middle {
+			border-left: 0;
+		}
+
+		body.is-article-visible #header {
+			-moz-transform: scale(0.95);
+			-webkit-transform: scale(0.95);
+			-ms-transform: scale(0.95);
+			transform: scale(0.95);
+			-moz-filter: blur(0.1rem);
+			-webkit-filter: blur(0.1rem);
+			-ms-filter: blur(0.1rem);
+			filter: blur(0.1rem);
+			opacity: 0;
+		}
+
+		body.is-preload #header {
+			-moz-filter: blur(0.125rem);
+			-webkit-filter: blur(0.125rem);
+			-ms-filter: blur(0.125rem);
+			filter: blur(0.125rem);
+		}
+
+			body.is-preload #header > * {
+				opacity: 0;
+			}
+
+			body.is-preload #header .content .inner {
+				max-height: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+				opacity: 0;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			#header .content p br {
+				display: none;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#header > * {
+				margin-top: 2rem;
+			}
+
+				#header > *:before {
+					top: calc(-2rem - 1px);
+					height: calc(2rem + 1px);
+				}
+
+			#header .logo {
+				width: 4.75rem;
+				height: 4.75rem;
+				line-height: 4.75rem;
+			}
+
+				#header .logo .icon:before {
+					font-size: 1.75rem;
+				}
+
+			#header .content .inner {
+				padding: 2.5rem 1rem;
+			}
+
+			#header .content p {
+				line-height: 1.875;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#header {
+				padding: 1.5rem 0;
+			}
+
+				#header .content .inner {
+					padding: 2.5rem 0;
+				}
+
+				#header nav ul {
+					-moz-flex-direction: column;
+					-webkit-flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
+					min-width: 10rem;
+					max-width: 100%;
+				}
+
+					#header nav ul li {
+						border-left: 0;
+						border-top: solid 1px #ffffff;
+					}
+
+						#header nav ul li:first-child {
+							border-top: 0;
+						}
+
+						#header nav ul li a {
+							height: 3rem;
+							line-height: 3rem;
+							min-width: 0;
+							width: 100%;
+						}
+
+				#header nav.use-middle:after {
+					display: none;
+				}
+
+		}
+
+	</style>
+
+	</head>
+	<body style="background-image: linear-gradient(rgba(39, 34, 34, 0.790), rgba(0, 0, 0, 0.9)), url(../images/home-banner.jpg);">
+
+	<div style="margin-top: 10px; padding-bottom: 0px;">
+	<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<a href="../index.html#about">
+					<span class="icon"><i class="fas fa-gem"></i></span>
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../index.html#work">Currículos</a></li>
+				</ul>
+			</nav>
+		</header>
 	</div>
 
 	<div id="fh5co-main">
-
-
+		
 		<div class="fh5co-tab-wrap">
 			<ul class="fh5co-tab-menu">
 				<li class="active"><a href="#" data-tab="1"><span class="icon icon-glass"></span><span class="menu-text">Perfil Profissional</span></a></li>
@@ -91,7 +373,7 @@
 						</div>
 					</div>
 					
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-md-12 fh5co-counter">
 							<div class="fh5co-number fh5co-left">2</div>
 							<div class="fh5co-text">
@@ -99,14 +381,16 @@
 								<p></p>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
 					<ul class="fh5co-social">
 						<li><a href="mailto:erivandosena@gmail.com"><i class="icon-envelope"></i></a></li>
-						<li><a href="https://twitter.com/erivandosena"><i class="icon-twitter"></i></a></li>
-						<!-- <li><a href="#"><i class="icon-instagram"></i></a></li> -->
-						<li><a href="https://scholar.google.com.br/citations?hl=pt-BR&user=rk-pamMAAAAJ"><i class="icon-google"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/erivandosena/"><i class="icon-linkedin"></i></a></li>
+						<li><a href="https://scholar.google.com.br/citations?hl=pt-BR&user=rk-pamMAAAAJ" target="_blank"><i class="icon-google"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/erivandosena/" target="_blank"><i class="icon-linkedin"></i></a></li>
+						<!--
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+						-->
 					</ul>
 					
 				</div>
@@ -162,7 +446,7 @@
 									<i class="icon-graduation-cap"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>2012-2017</h2>
+									<h2>2012 &mdash; 2017</h2>
 									<p>Tecnólogo em Análise e Desenvolvimento de Sistemas, Universidade Estácio.</p>
 								</div>
 							</div>
@@ -172,7 +456,7 @@
 									<i class="icon-graduation-cap"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>2009-2010</h2>
+									<h2>2009 &mdash; 2010</h2>
 									<p>Técnico em Microinformática, Escola técnica CEPEP.</p>
 								</div>
 							</div>
@@ -194,7 +478,7 @@
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>06/2020 - Atual</h2>
+									<h2>06/2020 &mdash; Atual</h2>
 									<h3>UNILAB</h3>
 									<h3>DevOps Developer</h3>
 									<p>Administração de Clusters Kubernetes On-Premises, Transformação de monolíticos em microsserviços, aplicação de Pipelines CI/CD (continuous integration, continuous delivery, continuous deployment), provisionamento de infraestrurura por código.</p>
@@ -206,7 +490,7 @@
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>12/2015 - 12/2020</h2>
+									<h2>12/2014 &mdash; 12/2020</h2>
 									<h3>UNILAB</h3>
 									<h3>Desenvolvedor Full Stack</h3>
 									<p>Desenvolvimento em Python, DJango, API Google Workspace, Bootstrap Framework, JSON, LDAP, PostgreSQL, Docker.</p>
@@ -218,7 +502,7 @@
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>12/2008 - 11/2014</h2>
+									<h2>12/2008 &mdash; 11/2014</h2>
 									<h3>RWD Serviços de Informática</h3>
 									<h3>Web Design</h3>
 									<p>Análise, planejamento, criação de websites dinâmicos com Java, .Net, PostgreSQL, Frameworks e desenvolvimento de aplicações web e desktop.</p>
@@ -230,7 +514,7 @@
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>01/2004 - 10/2008</h2>
+									<h2>01/2004 &mdash; 10/2008</h2>
 									<h3>Inforamos Comércio e Serviços de Informática Ltda.</h3>
 									<h3>Suporte Técnico em Informática</h3>
 									<p>Manutenção preventiva e corretiva de computadores, supervisão, montagem, instalação e configuração de softwares e periféricos, instalação de redes de computadores, suporte e atendimento ao cliente.</p>
@@ -242,19 +526,7 @@
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>01/2004 - 10/2013</h2>
-									<h3>Inforamos Comércio e Serviços de Informática Ltda.</h3>
-									<h3>Suporte Técnico em Informática</h3>
-									<p>Manutenção preventiva e corretiva de computadores, supervisão, montagem, instalação e configuração de softwares e periféricos, instalação de redes de computadores, suporte e atendimento ao cliente.</p>
-								</div>
-							</div>
-
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>01/1992 - 07/1999</h2>
+									<h2>01/1992 &mdash; 07/1999</h2>
 									<h3>Eletrônica Ramos ME</h3>
 									<h3>Técnico em Eletrônica</h3>
 									<p>Manutenção de equipamentos de áudio e vídeo, eletroeletrônicos, administração, instalação e montagem de som automotivo e equipamentos de segurança eletrônica.</p>
@@ -273,7 +545,7 @@
 							<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="95"><span><strong>Kubernetes</strong>95%</span></div>
+							<div class="chart" data-percent="81"><span><strong>Kubernetes</strong>81%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="99"><span><strong>Docker</strong>99%</span></div>
@@ -315,16 +587,19 @@
 							<div class="chart" data-percent="95"><span><strong>Python</strong>95%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>Java</strong>90%</span></div>
+							<div class="chart" data-percent="86"><span><strong>Java</strong>86%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="80"><span><strong>C#</strong>80%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="65"><span><strong>PHP</strong>65%</span></div>
+							<div class="chart" data-percent="45"><span><strong>PHP</strong>45%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="70"><span><strong>JavaScript</strong>70%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="58"><span><strong>Shell Script</strong>58%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="99.9"><span><strong>HTML/CSS</strong>99.9%</span></div>
@@ -334,6 +609,12 @@
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="91"><span><strong>PostgreSQL</strong>91%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="37"><span><strong>noSQL</strong>37%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="18"><span><strong>Testes<br>Unitários</strong>18%</span></div>
 						</div>
 					</div>
 				</div>
