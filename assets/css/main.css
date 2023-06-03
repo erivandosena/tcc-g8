@@ -1662,3 +1662,86 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		/* botao lista */
+		.image-list li {
+			display: flex;
+			align-items: center;
+			margin-bottom: 40px;
+		}
+
+		.image-list li img {
+			width: 100px;
+			height: auto;
+			margin-right: 20px;
+		}
+
+		.list-content {
+			flex: 1;
+		}
+
+		.list-content h4 {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		.list-content p {
+			font-size: 14px;
+			line-height: 1.4;
+			margin-bottom: 10px;
+		}
+
+		.access-link {
+			background-color: #333;
+			color: #fff;
+			padding: 4px 8px;
+			text-decoration: none;
+			border-radius: 4px;
+			transition: background-color 0.3s ease;
+			margin-top: 10px;
+			line-height: 1;
+			font-size: 12px;
+		}
+
+		.access-link:link {
+			text-decoration: none;
+		}
+		.access-link:hover {
+			background-color: #555;
+		}
+
+		/* cards lista */
+		.card-list {
+		list-style: none;
+		padding: 0;
+		}
+
+		.card {
+		background-color: #5b5b5b51;
+		border-radius: 10px;
+		padding: 20px;
+		margin-bottom: 20px;
+		display: flex; 
+		}
+
+		.card img {
+		width: 150px;
+		height: 100%;
+		border-radius: 10px;
+		margin-right: 20px;
+		}
+
+		.card-content {
+		flex: 1; 
+		}
+
+		.card-content h4 {
+		font-size: 18px;
+		margin-bottom: 10px;
+		}
+
+		.card-content p {
+		font-size: 14px;
+		margin-bottom: 10px;
+		}
+		
