@@ -43,8 +43,6 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
-	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
-	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -62,277 +60,6 @@
 	<![endif]-->
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-	<style>
-
-	/* Header */
-
-	#header {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		max-width: 100%;
-		text-align: center;
-	}
-
-		#header > * {
-			-moz-transition: opacity 0.325s ease-in-out;
-			-webkit-transition: opacity 0.325s ease-in-out;
-			-ms-transition: opacity 0.325s ease-in-out;
-			transition: opacity 0.325s ease-in-out;
-			position: relative;
-			margin-top: 3.5rem;
-		}
-
-			#header > *:before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: calc(-3.5rem - 1px);
-				left: calc(50% - 1px);
-				width: 1px;
-				height: calc(3.5rem + 1px);
-				background: #ffffff;
-			}
-
-		#header > :first-child {
-			margin-top: 0;
-		}
-
-			#header > :first-child:before {
-				display: none;
-			}
-
-		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
-			border: solid 1px #ffffff;
-			border-radius: 100%;
-		}
-
-			#header .logo .icon:before {
-				font-size: 2rem;
-			}
-
-		#header .content {
-			border-style: solid;
-			border-color: #ffffff;
-			border-top-width: 1px;
-			border-bottom-width: 1px;
-			max-width: 100%;
-		}
-
-			#header .content .inner {
-				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-moz-transition-delay: 0.25s;
-				-webkit-transition-delay: 0.25s;
-				-ms-transition-delay: 0.25s;
-				transition-delay: 0.25s;
-				padding: 3rem 2rem;
-				max-height: 40rem;
-				overflow: hidden;
-			}
-
-				#header .content .inner > :last-child {
-					margin-bottom: 0;
-				}
-
-			#header .content p {
-				text-transform: uppercase;
-				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
-				line-height: 2;
-			}
-
-		#header nav ul {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			margin-bottom: 0;
-			list-style: none;
-			padding-left: 0;
-			border: solid 1px #ffffff;
-			border-radius: 4px;
-		}
-
-			#header nav ul li {
-				padding-left: 0;
-				border-left: solid 1px #ffffff;
-				width: 200px;
-			}
-
-				#header nav ul li:first-child {
-					border-left: 0;
-				}
-
-				#header nav ul li a {
-					display: block;
-					min-width: 7.5rem;
-					height: 2.75rem;
-					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
-					text-transform: uppercase;
-					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
-					border-bottom: 0;
-				}
-
-					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
-					}
-
-					#header nav ul li a:active {
-						background-color: rgba(255, 255, 255, 0.175);
-					}
-
-		#header nav.use-middle:after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0;
-			left: calc(50% - 1px);
-			width: 1px;
-			height: 100%;
-			background: #ffffff;
-		}
-
-		#header nav.use-middle ul li.is-middle {
-			border-left: 0;
-		}
-
-		body.is-article-visible #header {
-			-moz-transform: scale(0.95);
-			-webkit-transform: scale(0.95);
-			-ms-transform: scale(0.95);
-			transform: scale(0.95);
-			-moz-filter: blur(0.1rem);
-			-webkit-filter: blur(0.1rem);
-			-ms-filter: blur(0.1rem);
-			filter: blur(0.1rem);
-			opacity: 0;
-		}
-
-		body.is-preload #header {
-			-moz-filter: blur(0.125rem);
-			-webkit-filter: blur(0.125rem);
-			-ms-filter: blur(0.125rem);
-			filter: blur(0.125rem);
-		}
-
-			body.is-preload #header > * {
-				opacity: 0;
-			}
-
-			body.is-preload #header .content .inner {
-				max-height: 0;
-				padding-top: 0;
-				padding-bottom: 0;
-				opacity: 0;
-			}
-
-		@media screen and (max-width: 980px) {
-
-			#header .content p br {
-				display: none;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#header > * {
-				margin-top: 2rem;
-			}
-
-				#header > *:before {
-					top: calc(-2rem - 1px);
-					height: calc(2rem + 1px);
-				}
-
-			#header .logo {
-				width: 4.75rem;
-				height: 4.75rem;
-				line-height: 4.75rem;
-			}
-
-				#header .logo .icon:before {
-					font-size: 1.75rem;
-				}
-
-			#header .content .inner {
-				padding: 2.5rem 1rem;
-			}
-
-			#header .content p {
-				line-height: 1.875;
-			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#header {
-				padding: 1.5rem 0;
-			}
-
-				#header .content .inner {
-					padding: 2.5rem 0;
-				}
-
-				#header nav ul {
-					-moz-flex-direction: column;
-					-webkit-flex-direction: column;
-					-ms-flex-direction: column;
-					flex-direction: column;
-					min-width: 10rem;
-					max-width: 100%;
-				}
-
-					#header nav ul li {
-						border-left: 0;
-						border-top: solid 1px #ffffff;
-					}
-
-						#header nav ul li:first-child {
-							border-top: 0;
-						}
-
-						#header nav ul li a {
-							height: 3rem;
-							line-height: 3rem;
-							min-width: 0;
-							width: 100%;
-						}
-
-				#header nav.use-middle:after {
-					display: none;
-				}
-
-		}
-
-	</style>
 
 	</head>
 	<body style="background-image: linear-gradient(rgba(39, 34, 34, 0.790), rgba(0, 0, 0, 0.9)), url(../images/home-banner.jpg);">
@@ -370,32 +97,12 @@
 								<img src="images/profile_img2.png" alt="Laerte">
 							</figure>
 							<h1>Laerte Porto Junior</h1>
-							<p>Formado em Analise de Sistemas e Pós Graduado na área da Segurança da Informação pela Universo e com experiência de + 10 anos na área da tecnologia, atuando como sysadmin onpremisse, passo por uma transição de carreira onde busco conhecer e aprender a implementar estratégias de migração de aplicações para a Cloud como Devops, visando a redução de custos e aumento de desempenho para isso almejo uma oportunidade para atuar na área de TI, com foco em Cloud. </p>
+							<p class="custom-text">Formado em Analise de Sistemas e Pós Graduado na área da Segurança da Informação pela Universo e com experiência de + 10 anos na área da tecnologia, atuando como sysadmin onpremisse, passo por uma transição de carreira onde busco conhecer e aprender a implementar estratégias de migração de aplicações para a Cloud como Devops, visando a redução de custos e aumento de desempenho para isso almejo uma oportunidade para atuar na área de TI, com foco em Cloud. </p>
 						</div>
 					</div>
-
-					<!--
-					<div class="row">
-						<div class="col-md-12 fh5co-counter">
-							<div class="fh5co-number fh5co-left">10</div>
-							<div class="fh5co-text">
-								<h3 class="border-bottom">Anos de experiência em Web Design</h3>
-								<p></p>
-							</div>
-						</div>
-					</div>
-					-->
-
 					<ul class="fh5co-social">
 						<li><a href="mailto:laertep@gmail.com" title="Entrar em contato"><i class="icon-envelope"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/laerteportojr/" target="_blank" title="Perfil no LinkedIn"><i class="icon-linkedin"></i></a></li>
-						<li><a href="#" target="_blank" title="Contribuições no Github"><i class="icon-github"></i></a></li>
-						<li><a href="#" target="_blank" title="Currículo versão PDF"><i class="icon-file-pdf-o"></i></a></li>
-						<!--
-						<li><a href="#"><i class="icon-twitter"></i></a></li>
-						<li><a href="#"><i class="icon-instagram"></i></a></li>
-						<li><a href="#"><i class="icon-google"></i></a></li>
-						-->
 					</ul>
 				</div>
 			</div>
@@ -403,15 +110,13 @@
 				<div class="fh5co-content-inner">
 					<div class="row">
 						<div class="col-md-12">
-							<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-
 							<div class="fh5co-feature">
 								<div class="fh5co-icon">
 									<i class="icon-graduation-cap"></i>
 								</div>
 								<div class="fh5co-text">
 									<h2>02/1999 &mdash; 06/2003</h2>
-									<p>Analise de Sistemas, Universo Salgado de Oliveira.</p>
+									<p class="custom-text-left">Analise de Sistemas, Universo Salgado de Oliveira.</p>
 								</div>
 							</div>
 
@@ -421,22 +126,9 @@
 								</div>
 								<div class="fh5co-text">
 									<h2>02/2014 &mdash; 12/2014</h2>
-									<p>Segurança da Informação, Universidade Salgado de Oliveira.</p>
+									<p class="custom-text-left">Segurança da Informação, Universidade Salgado de Oliveira.</p>
 								</div>
 							</div>
-
-							<!--
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-graduation-cap"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>2008-2012</h2>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
-								</div>
-							</div>
-							-->
-
 						</div>
 						
 					</div>
@@ -446,9 +138,6 @@
 				<div class="fh5co-content-inner">
 					<div class="row">
 						<div class="col-md-12">
-
-							<!-- <p>I have the privilege to work with these cool companies.</p> -->
-
 							<div class="fh5co-feature">
 								<div class="fh5co-icon">
 									<i class="icon-black-tie"></i>
@@ -457,10 +146,10 @@
 									<h2>03/2023 &mdash; Atual</h2>
 									<h3>Grupo Avilages</h3>
 									<h3>Analista de TI</h3>
-									<p>Configuração e atendimento aos sistemas ERP da empresa em Agronegócio e administrativo;</p>
-									<p>Atendimento via sistema EPA, visando integrar e humanizar a solicitação de chamados direcionados a TI;</p>
-									<p>Implantação e configuração de servidores virtualizados e físicos, área de segurança, atendimento aos usuários N1/N2 e manutenção e configuração nas estações;</p>
-									<p>Atendimento da infraestrutura para atender demandas de toda infra de rede.</p>
+									<p class="custom-text-left">Configuração e atendimento aos sistemas ERP da empresa em Agronegócio e administrativo;<br />
+									Atendimento via sistema EPA, visando integrar e humanizar a solicitação de chamados direcionados a TI;<br />
+									Implantação e configuração de servidores virtualizados e físicos, área de segurança, atendimento aos usuários N1/N2 e manutenção e configuração nas estações;<br />
+									Atendimento da infraestrutura para atender demandas de toda infra de rede.</p>
 								</div>
 							</div>
 
@@ -472,10 +161,10 @@
 									<h2>07/2022 &mdash; 02/2023</h2>
 									<h3>Ilha Service Tecnologia e Serviços</h3>
 									<h3>Analista N2</h3>
-									<p>Atendimento N2 gerenciamento de acesso ao AD com permissionários pertinentes aos grupos normatizadas na aplicação;</p>
-									<p>Cadastro de emal via Echange e configuração ferramenta de comunicação TEAMS;</p>
-									<p>Atendimento in loco aos usuáros, acesso remoto através de VPN;</p>
-									<p>Atendimento através do sistema da IBM para gerenciar os tickets solicitação via chamado.</p>
+									<p class="custom-text-left">Atendimento N2 gerenciamento de acesso ao AD com permissionários pertinentes aos grupos normatizadas na aplicação;<br />
+									Cadastro de emal via Echange e configuração ferramenta de comunicação TEAMS;<br />
+									Atendimento in loco aos usuáros, acesso remoto através de VPN;<br />
+									Atendimento através do sistema da IBM para gerenciar os tickets solicitação via chamado.</p>
 								</div>
 							</div>
 
@@ -487,9 +176,9 @@
 									<h2>03/2022 &mdash; 02/2022</h2>
 									<h3>OpenData Center</h3>
 									<h3>Analista de Infraestrutura I</h3>
-									<p>Gerenciamento de ambiente Linux e Windows via VmWare com virtualização de serviços em Cloud atravé de um vCenter;</p>
-									<p>Atendimento aos clientes remotamente para atender sistemas SAS para configuração é implementação do ambiente;</p>
-									<p>Gerenciamento e configuração de ferramentas que visam viabilizar aplicações em Cloud.</p>
+									<p class="custom-text-left">Gerenciamento de ambiente Linux e Windows via VmWare com virtualização de serviços em Cloud atravé de um vCenter;<br />
+									Atendimento aos clientes remotamente para atender sistemas SAS para configuração é implementação do ambiente;<br />
+									Gerenciamento e configuração de ferramentas que visam viabilizar aplicações em Cloud.</p>
 								</div>
 							</div>
 
@@ -501,9 +190,6 @@
 			<div class="fh5co-tab-content" data-content="4">
 				<div class="fh5co-content-inner">
 					<div class="row">
-						<div class="col-md-12">
-							<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="50"><span><strong>AWS Cloud</strong>50%</span></div>
 						</div>
@@ -523,12 +209,6 @@
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="70"><span><strong>ShellScript</strong>70%</span></div>
 						</div>
-						
-						<!--
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>AngularJS</strong>90%</span></div>
-						</div>
-						-->
 					</div>
 				</div>
 			</div>

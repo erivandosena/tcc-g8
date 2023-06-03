@@ -23,7 +23,7 @@
 # Notes:
 #
 # - Este Dockerfile assume que o código do aplicativo está localizado no diretório atual
-# - O aplicativo pode ser acessado em um navegador da Web em http://dominio.com/
+# - O aplicativo pode ser acessado em um navegador da Web em http://www.updevops.com.br/
 #
 # Version: 1.0
 
@@ -34,7 +34,7 @@ LABEL \
   org.opencontainers.image.title="Official Node Docker image" \
   org.opencontainers.image.description="Siste de Currículos" \
   org.opencontainers.image.version="1.0.0" \
-  org.opencontainers.image.url="https://github.com/erivandosena/tcc-g8#readme" \
+  org.opencontainers.image.url="https://hub.docker.com/r/erivando/website-node" \
   org.opencontainers.image.source="https://github.com/erivandosena/tcc-g8.git" \
   org.opencontainers.image.licenses="MIT" \
   org.opencontainers.image.author="erivandosena, Grupo 8" \
