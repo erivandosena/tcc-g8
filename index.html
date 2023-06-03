@@ -12,7 +12,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta name="copyright" content="© 2023 UP DevOps" />
 		<meta name="description" content="Site de Currículos. Grupo 8: Erivando Sena; Micael; Laerte; Renato. Mentor TCC: Rodolfo @Homaru">
-		<meta name="keywords" content="UP DevOps, Curriculos, Escola da Nuvem, AWS, Bucket S3, CloudFront, html5, css3, mobile first, website responsive" />
+		<meta name="keywords" content="up devops, updevops, curriculos, escola da nuvem, edn, aws, bucket s3, cloudfront, certificate manager, registro.br, html5, css3, mobile, website responsive" />
 		<meta name="author" content="Erivando Sena" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<title>Currículo Online &mdash; UP DevOps</title>
@@ -35,148 +35,7 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
 
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-		<style>
-			/* Estilos personalizados para o carrossel */
-			.carousel {
-			display: flex;
-			overflow-x: hidden; /* Remover barra de rolagem */
-			scroll-snap-type: x mandatory;
-			scroll-behavior: smooth;
-			-webkit-overflow-scrolling: touch;
-			position: relative;
-			top: 25px;
-			}
-
-			.carousel-item {
-			scroll-snap-align: start;
-			flex-shrink: 0;
-			width: 99%;
-			height: 100%;
-			background-size: cover;
-			background-position: center;
-			position: relative;
-			}
-
-			.carousel-description {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			width: 200px;
-			background-color: rgba(0, 0, 0, 0.5);
-			color: #ffffff;
-			padding: 10px;
-			border-radius: 5px;
-			font-size: 14px;
-			}
-
-			.carousel-buttons {
-			display: none; /* Ocultar a div */
-			}
-
-			.access-link-carrossel:link {
-				text-decoration: none;
-			}
-
-			.access-link-carrossel:visited {
-				text-decoration: none;
-			}
-
-			.access-link-carrossel:hover {
-				text-decoration: none;
-			}
-
-			.access-link-carrossel:focus {
-				text-decoration: none;
-			}
-
-			/* botao lista */
-			.image-list li {
-				display: flex;
-				align-items: center;
-				margin-bottom: 40px;
-			}
-
-			.image-list li img {
-				width: 100px;
-				height: auto;
-				margin-right: 20px;
-			}
-
-			.list-content {
-				flex: 1;
-			}
-
-			.list-content h4 {
-				font-size: 18px;
-				margin-bottom: 10px;
-			}
-
-			.list-content p {
-				font-size: 14px;
-				line-height: 1.4;
-				margin-bottom: 10px;
-			}
-
-			.access-link {
-				background-color: #333;
-				color: #fff;
-				padding: 4px 8px;
-				text-decoration: none;
-				border-radius: 4px;
-				transition: background-color 0.3s ease;
-				margin-top: 10px;
-				line-height: 1;
-				font-size: 12px;
-			}
-
-			.access-link:link {
-				text-decoration: none;
-			}
-			.access-link:hover {
-				background-color: #555;
-			}
-
-			/* cards lista */
-			.card-list {
-			list-style: none;
-			padding: 0;
-			}
-
-			.card {
-			background-color: #5b5b5b51;
-			border-radius: 10px;
-			padding: 20px;
-			margin-bottom: 20px;
-			display: flex; 
-			}
-
-			.card img {
-			width: 150px;
-			height: 100%;
-			border-radius: 10px;
-			margin-right: 20px;
-			}
-
-			.card-content {
-			flex: 1; 
-			}
-
-			.card-content h4 {
-			font-size: 18px;
-			margin-bottom: 10px;
-			}
-
-			.card-content p {
-			font-size: 14px;
-			margin-bottom: 10px;
-			}
-
-		</style>
-
-
 	</head>
 	<body class="is-preload">
 
@@ -194,60 +53,13 @@
 							<div class="inner">
 								<h1>UP DevOps</h1>
 								<p>Website para Divulgação de Currículo</p>
-
-								<!-- carrossel -->
-								<!-- <div class="carousel">
-									<div class="carousel-item">
-										<img src="cv/images/profile_img2.png" height="140px" alt="" />
-										<div class="carousel-description">
-										<strong>Analista de TI</strong><br />
-										<a href="cv/002.html" class="access-link-carrossel">
-										<span>Configuração e atendimento aos sistemas ERP da empresa em Agronegócio e administrativo</span>
-										</a>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img src="cv/images/profile_img1.png" height="140px" alt="" />
-										<div class="carousel-description">
-										<strong>DevOps Developer</strong><br />
-										<a href="cv/001.html" class="access-link-carrossel">
-										<span>Administração de Clusters Kubernetes On-Premises, Transformação de monolíticos em microsserviços</span>
-										</a>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img src="cv/images/profile_img3.png" height="140px" alt="" />
-										<div class="carousel-description">
-										<strong>Estágio</strong><br />
-										<a href="cv/003.html" class="access-link-carrossel">
-										<span>Desenvolvimento de relatórios, arquivamento de documentos, criação de planilhas eletrônicas relacionadas à administração.</span>
-										</a>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img src="cv/images/profile_img4.png" height="140px" alt="" />
-										<div class="carousel-description">
-										<strong>DevOps Developer</strong><br />
-										<a href="cv/004.html" class="access-link-carrossel">
-										<span>??, ???</span>
-										</a>
-										</div>
-									</div>
-								</div> 
-								<div class="carousel-buttons">
-									<button id="prevButton">Anterior</button>
-									<button id="nextButton">Próximo</button>
-								</div>
-								-->
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<!-- <li><a href="#intro">Home</a></li> -->
 								<li><a href="#work" title="Visualizar Currículos">Currículos</a></li>
 								<li><a href="#about" title="Sobre o UP DevOps">Sobre</a></li>
 								<li><a href="#contact" title="Entrar em Contato">Contato</a></li>
-								<!-- <li><a href="#elements">Elements</a></li> -->
 							</ul>
 						</nav>
 					</header>
@@ -264,15 +76,12 @@
 
 						<!-- Work -->
 							<article id="work">
-
 								<h3 class="major">Currículo Online</h2>
-
 								<section>
 								<ul class="card-list">
 									<li class="card">
 									<img src="cv/images/profile_img2.png" alt="Laerte" />
 									<div class="card-content">
-										<!-- <h4><a href="cv/002.html" class="access-link">Laerte</a></h4> -->
 										<h4><a href="cv/002.html" title="Saber mais...">Laerte Porto Junior</a></h4>
 										<p class="card-description">Formado em Análise de Sistemas e Pós Graduado na área de Segurança da Informação pela Universo. Experiência de +10 anos na área de tecnologia, atuando como sysadmin on-premise. Atualmente, em transição de carreira para a área de Cloud como DevOps, buscando oportunidades para atuar com foco em Cloud e implementação de estratégias de migração de aplicações. </p>
 									</div>
@@ -295,20 +104,16 @@
 									<img src="cv/images/profile_img4.png" alt="Renato" />
 									<div class="card-content">
 										<h4><a href="cv/004.html" title="Saber mais...">Renato Soares da Silva</a></h4>
-										<p class="card-description">Bacharelado em Sistemas de Informação.</p>
+										<p class="card-description">Bacharelado em Sistemas de Informação, Técnico de Informática com grande experiência no desenvolvimento de técnicas de resolução de problemas, execução de reparações e instalação de sistemas operacionais Mac e Windows.</p>
 									</div>
 									</li>
-									<!-- Adicione mais itens conforme necessário -->
 								</ul>
 								</section>
-
 							</article>
 
 						<!-- About -->
 							<article id="about" style="background-image: linear-gradient(rgba(39, 34, 34, 0.900), rgba(0, 0, 0, 0.9)), url('images/home-banner.jpg'); background-size: 100%; background-repeat: no-repeat;">
-								<!-- <span class="image main" style="opacity: 0.2;"><img src="images/home-banner.jpg" alt=""/></span> -->
 								<h2 class="major">Sobre</h2>
-								
 								<p style="position: relative;">
 									Projeto de conclusão de curso elaborado por alunos da 
 									<a href="https://escoladanuvem.org/" target="_blank">Escola da Nuvem</a>.<br />
@@ -323,7 +128,7 @@
 									<br /><br />
 									Com esses requisitos obtidos, analisou-se por entregar o projeto 
 									no <strong>S3</strong> com distribuição sendo realizada através do <strong>CloudFront</strong> e 
-									hospedado em <strong>Norte da Virgínia <i>(us-east-1)</i></strong>, o 
+									hospedado em <strong>Norte da Virgínia <i>(us-east-1)</i></strong>, com 
 									S3 temos um armazenamento altamente disponível e escalável, devido 
 									à replicação automática dos dados em regiões variadas e também pelo custo baixo.
 									<br /><br />
@@ -337,7 +142,6 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contato</h2>
-								<!-- <form method="post" action="#"> -->
 								<form id="contact-form">
 									<div class="fields">
 										<div class="field half">
@@ -358,261 +162,12 @@
 										<li><input type="reset" value="Limpar" /></li>
 									</ul>
 								</form>
-								<!--
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-								-->
-							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-									while (!deck.isInOrder()) {
-										print 'Iteration ' + i;
-										deck.shuffle();
-										i++;
-									}
-
-									print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
 							</article>
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; 2023 Currículo Online | Design: <a href="https://www.updevops.com.br">UP DevOps</a></p>
+						<p class="copyright">&copy; 2023 Currículo Online | Design: <a href="http://www.updevops.com.br">UP DevOps</a></p>
 					</footer>
 
 			</div>
@@ -626,445 +181,40 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-
 			<script>
-				// Script para criar o carrossel
-				const carousel = document.querySelector('.carousel');
-				const items = carousel.querySelectorAll('.carousel-item');
-				let scrollPos = 0;
-				const scrollStep = 200;
-				let timer; // Variável para armazenar o timer do deslizamento automático
-
-				function handleCarouselScroll(direction) {
-				const carouselWidth = carousel.offsetWidth;
-				const itemWidth = items[0].offsetWidth;
-				const visibleItems = Math.floor(carouselWidth / itemWidth);
-
-				if (direction === 'prev') {
-					scrollPos -= itemWidth * visibleItems;
-				} else if (direction === 'next') {
-					scrollPos += itemWidth * visibleItems;
-				} else if (direction === 'reset') {
-					scrollPos = 0;
-				}
-
-				// Verifica se atingiu o final do carrossel
-				const maxScrollPos = carousel.scrollWidth - carouselWidth;
-				if (scrollPos >= maxScrollPos) {
-					scrollPos = 0; // Reinicia a posição de rolagem para o início
-				}
-
-				carousel.scrollTo({
-					left: scrollPos,
-					behavior: 'smooth'
-				});
-				}
-
-				function startCarouselAutoScroll() {
-				timer = setTimeout(() => {
-					handleCarouselScroll('next');
-					startCarouselAutoScroll(); // Reinicia a rolagem automática
-				}, 5000);
-				}
-
-				function stopCarouselAutoScroll() {
-				clearTimeout(timer);
-				}
-
-				// Adiciona os eventos de clique aos botões
-				const prevButton = document.getElementById('prevButton');
-				const nextButton = document.getElementById('nextButton');
-
-				prevButton.addEventListener('click', () => {
-				stopCarouselAutoScroll();
-				handleCarouselScroll('prev');
-				});
-
-				nextButton.addEventListener('click', () => {
-				stopCarouselAutoScroll();
-				handleCarouselScroll('next');
-				});
-
-				// Inicia a rolagem automática
-				startCarouselAutoScroll();
-			</script>
-
-			<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-			<script>
-				// Verifica se o email está no formato correto
-				function isValidEmail(email) {
-					if (email === "") {
-						return false;
-					}
-		
-					var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-					if (!re.test(email)) {
-						return false;
-					}
-					
-					return true;
-				}
-
-				const form = document.getElementById('contact-form');
-				form.addEventListener('submit', function(event) {
+				document.getElementById("contact-form").addEventListener("submit", function(event) {
 					event.preventDefault();
-					
-					const nameInput = document.getElementById('name');
-					const emailInput = document.getElementById('email');
-					const messageInput = document.getElementById('message');
 
-					// valida campos
-					const name = nameInput.value.trim();
-					const email = emailInput.value.trim();
-					const message = messageInput.value.trim();
-					
-					// Validar Nome
-					if (name === '') {
-						alert('Por favor, preencha o campo Nome.');
-						nameInput.focus();
-						return;
-					}
-					
-					// Validar E-mail
-					if (!isValidEmail(email)) {
-						alert('Por favor, insira um endereço de e-mail válido.');
-						emailInput.focus();
-						return;
-					}
-					
-					// Validar Mensagem
-					if (message === '') {
-						alert('Por favor, preencha o campo Mensagem.');
-						messageInput.focus();
-						return;
-					}
-					
-					const data = {
-						"personalizations":[
-							{
-								"to":[
-									{
-									"email":"2019207083@fmu.edu.br",
-									"name":"Currículo Online"
-									}
-								],
-								"cc":[
-									{
-									"email":"micaelschutz04@gmail.com, laertep@gmail.com, renato.silvas@gmail.com, erivandosena@gmail.com"
-									}
-								],
-								"bcc":[
-									{
-									"email":email,
-									"name":name
-									}
-								],
-								"subject":"Novo contato do site Currículo Online - UP DevOps"
-							}
-						],
-						"content":[
-							{
-								"type":"text/plain",
-								"value": message
-							}
-						],
-						"from":{
-							"email":"micaelschutz04@gmail.com, laertep@gmail.com, renato.silvas@gmail.com, erivandosena@gmail.com",
-							"name":"Sam Smith"
+					var name = document.getElementById("name").value;
+					var email = document.getElementById("email").value;
+					var message = document.getElementById("message").value;
+
+					var data = {
+						name: name,
+						from: email,
+						message: message
+					};
+
+					fetch("https://api.getmovielist.com/api/sendmail", {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+							"Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwiZW1haWwiOiJnaW8ifQ.DzjyyGonAeJ_hSaguKuk3NYEIkocfC9dTFaF9SSyNqY" // Adicione seu token aqui
 						},
-						"reply_to":{
-							"email":"rodolfosilv@yahoo.com.br",
-							"name":"CICLO 2 AWS 16 G8"
-						}
-					};
-
-					const headers = {
-					Authorization: 'Bearer TOKEN-KEY-SENDGRID',
-					'Content-Type': 'application/json',
-					'Access-Control-Allow-Methods': 'POST, PUT, PATCH, GET, DELETE, OPTIONS',
-					'Access-Control-Allow-Headers': 'Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization',
-					'Access-Control-Allow-Origin': '*',
-					'Access-Control-Allow-Headers': '*'
-					};
-
-					axios.post('https://api.sendgrid.com/v3/mail/send', data, {
-					headers: headers
+						body: JSON.stringify(data)
 					})
 					.then(function(response) {
-						alert('E-mail enviado com sucesso!');
-						form.reset();
+						if (response.ok) {
+							alert("Mensagem enviada com sucesso!");
+							document.getElementById("contact-form").reset();
+						} else {
+							throw new Error("Erro ao enviar a mensagem.");
+						}
 					})
 					.catch(function(error) {
-						console.error(error);
-						alert('Ao tentar enviar a mensagem ocorreu o erro:\n\n' +error+'\n\nTente mais tarde!');
+						alert(error.message);
 					});
 				});
-			</script> -->
-
-    <script>
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault(); // Impede o envio do formulário
-
-            // Coleta os dados do formulário
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-
-            // Cria um objeto com os dados
-            var data = {
-                name: name,
-                from: email,
-                message: message
-            };
-
-            // Realiza o envio do formulário via fetch
-            fetch("https://api.getmovielist.com/api/sendmail", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwiZW1haWwiOiJnaW8ifQ.DzjyyGonAeJ_hSaguKuk3NYEIkocfC9dTFaF9SSyNqY" // Adicione seu token aqui
-                },
-                body: JSON.stringify(data)
-            })
-            .then(function(response) {
-                if (response.ok) {
-                    alert("Mensagem enviada com sucesso!");
-                    document.getElementById("contact-form").reset(); // Limpa o formulário
-                } else {
-                    throw new Error("Erro ao enviar a mensagem.");
-                }
-            })
-            .catch(function(error) {
-                alert(error.message);
-            });
-        });
-    </script>
-
-
-	<!-- <script>
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-			event.preventDefault(); // Evita o envio do formulário
-
-			var name = document.getElementById('name').value;
-			var email = document.getElementById('email').value;
-			var message = document.getElementById('message').value;
-
-			// Configuração do SendPulse
-			var smtpConfig = {
-				host: 'smtp.sendpulse.com',
-				port: 465,
-				secure: true,
-				username: 'seniorfullstackdevops@gmail.com',
-				password: 'Grupo8Tcc'
-			};
-
-			// Dados do email
-			var emailData = {
-				to: [{
-					name: name,
-					email: email
-				}],
-				from: {
-					name: 'UP DevOps',
-					email: 'seniorfullstackdevops@gmail.com'
-				},
-				subject: 'Teste com SendPulse',
-				text: message
-			};
-
-			// Enviar email usando o SendPulse
-			Email.send(emailData, smtpConfig)
-				.then(function(response) {
-					alert('Email enviado com sucesso!');
-					document.getElementById('contact-form').reset();
-				})
-				.catch(function(error) {
-					alert('Erro ao enviar o email. Por favor, tente novamente mais tarde.');
-				});
-		});
-	</script> -->
-
-	<!-- <script>
-
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-			event.preventDefault(); // Evita o envio do formulário
-
-			var name = document.getElementById('name').value;
-			var email = document.getElementById('email').value;
-			var message = document.getElementById('message').value;
-
-			// Configuração do SendPulse
-			var clientId = 'b00e739abe4b2149d7d61eb0ce3088cd';
-			var clientSecret = '40f64544c9a5e8407f82579b60a9d370';
-			var accessToken;
-
-			// Obter access token do SendPulse
-			SPApiClient.loginOAuth2(clientId, clientSecret, function(response) {
-				if (response && response.access_token) {
-					accessToken = response.access_token;
-
-					// Enviar email usando o SendPulse
-					var emailData = {
-						html: message,
-						subject: 'Assunto do email',
-						from: { name: 'UP DevOps', email: 'seniorfullstackdevops@gmail.com' },
-						to: [{ name: name, email: email }]
-					};
-
-					SPApiClient.smtpSendMail(emailData, function(response) {
-						alert('Email enviado com sucesso!');
-						document.getElementById('contact-form').reset();
-					}, function(error) {
-						alert('Erro ao enviar o email. Por favor, tente novamente mais tarde.');
-					});
-				} else {
-					alert('Erro ao autenticar com o SendPulse. Por favor, tente novamente mais tarde.');
-				}
-			});
-		});
-	</script> -->
-
-	<!-- <script>
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-			event.preventDefault(); // Evita o envio do formulário
-
-			var name = document.getElementById('name').value;
-			var email = document.getElementById('email').value;
-			var message = document.getElementById('message').value;
-
-			// Configuração do SendPulse
-			var clientId = 'b00e739abe4b2149d7d61eb0ce3088cd';
-			var clientSecret = '40f64544c9a5e8407f82579b60a9d370';
-
-			// Inicialização da biblioteca SendPulse
-			sendpulse.init({
-				clientId: clientId,
-				clientSecret: clientSecret
-			}, function() {
-				// Autenticação bem-sucedida
-
-				// Enviar email usando o SendPulse
-				sendpulse.smtpSendMail({
-					html: message,
-					subject: 'UP DevOps',
-					from: { name: 'Remetente', email: 'seniorfullstackdevops@gmail.com' },
-					to: [{ name: name, email: email }]
-				}, function(response) {
-					alert('Email enviado com sucesso!');
-					document.getElementById('contact-form').reset();
-				}, function(error) {
-					alert('Erro ao enviar o email. Por favor, tente novamente mais tarde.');
-				});
-			}, function() {
-				// Falha na autenticação
-				alert('Erro ao autenticar com o SendPulse. Por favor, tente novamente mais tarde.');
-			});
-		});
-	</script> -->
-
-	<!-- <script>
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-		event.preventDefault(); // Evita o envio do formulário
-
-		var name = document.getElementById('name').value;
-		var email = document.getElementById('email').value;
-		var message = document.getElementById('message').value;
-
-		var access_token = '';
-		var clientId = 'b00e739abe4b2149d7d61eb0ce3088cd';
-		var clientSecret = '40f64544c9a5e8407f82579b60a9d370';
-
-		// Fazendo a chamada para obter o access_token
-		var xhr = new XMLHttpRequest();
-		xhr.open('POST', 'https://api.sendpulse.com/oauth/access_token', true);
-		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
-		xhr.onreadystatechange = function() {
-			if (xhr.readyState === 4 && xhr.status === 200) {
-			var response = JSON.parse(xhr.responseText);
-			access_token = response.access_token;
-			console.log('Access Token:', access_token);
-
-			// Configuração do SendPulse
-			var apiKey = access_token;
-			var apiUrl = 'https://api.sendpulse.com';
-
-			// Dados do email
-			var emailData = {
-				html: btoa(message),
-				text: message,
-				subject: 'Assunto do email',
-				from: { name: 'Remetente', email: 'seniorfullstackdevops@gmail.com' },
-				to: [{ name: name, email: email }],
-				cc: [
-				{ name: 'Recipient 2', email: 'jefponte@unilab.edu.br' }
-				],
-				bcc: [
-				{ name: 'Recipient 3', email: 'erivandosena@gmail.com' }
-				]
-			};
-
-			// Requisição AJAX para enviar o email
-			var request = new XMLHttpRequest();
-			request.open('POST', apiUrl + '/smtp/emails');
-			request.setRequestHeader('Content-Type', 'application/json');
-			request.setRequestHeader('Authorization', 'Bearer ' + apiKey);
-			request.onreadystatechange = function() {
-				if (request.readyState === XMLHttpRequest.DONE) {
-				if (request.status === 200) {
-					alert('Email enviado com sucesso!');
-					document.getElementById('contact-form').reset();
-				} else {
-					alert('Erro ao enviar o email. Por favor, tente novamente mais tarde.');
-				}
-				}
-			};
-			request.send(JSON.stringify({ email: emailData }));
-			}
-		};
-
-		var params = 'grant_type=client_credentials&client_id=' + clientId + '&client_secret=' + clientSecret;
-		xhr.send(params);
-		});
-	</script> -->
-
-	<!-- <script>
-
-
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-			event.preventDefault(); // Evita o envio do formulário
-
-
-
-
-
-		var clientId = 'b00e739abe4b2149d7d61eb0ce3088cd';
-		var clientSecret = '40f64544c9a5e8407f82579b60a9d370';
-
-		// Fazendo a chamada para obter o access_token
-		var xhr = new XMLHttpRequest();
-		xhr.open('POST', 'https://api.sendpulse.com/oauth/access_token', true);
-		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
-		xhr.onreadystatechange = function() {
-		if (xhr.readyState === 4 && xhr.status === 200) {
-			var response = JSON.parse(xhr.responseText);
-			var access_token = response.access_token;
-			console.log('Access Token:', access_token);
-			alert(access_token);
-		}
-		};
-
-		var params = 'grant_type=client_credentials&client_id=' + clientId + '&client_secret=' + clientSecret;
-		xhr.send(params);
-
-		});
-
-
-	</script> -->
-
-
+			</script>
 	</body>
 </html>
