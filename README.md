@@ -7,7 +7,6 @@ Desenvolvimento de um website (html, css, imagens) contendo os currículos do gr
 Erivando de Sena Ramos  
 Laerte Porto Júnior  
 Micael Schutz dos Santos  
-Renato Soares da Silva  
 
 **Mentor**  
 Rodolfo dos Santos Silva
