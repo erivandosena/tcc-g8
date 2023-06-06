@@ -1744,4 +1744,11 @@ input, select, textarea {
 		font-size: 14px;
 		margin-bottom: 10px;
 		}
+
+		/* pagina erro */
+		.imagem-erro {
+			width: 100%;
+			max-width: 590px;
+			height: auto;
+		  }
 		
