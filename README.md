@@ -7,7 +7,6 @@ Desenvolvimento de um website (html, css, imagens) contendo os currículos do gr
 Erivando de Sena Ramos  
 Laerte Porto Júnior  
 Micael Schutz dos Santos  
-Renato Soares da Silva  
 
 **Mentor**  
 Rodolfo dos Santos Silva
@@ -15,6 +14,3 @@ Rodolfo dos Santos Silva
 ### Gitflow sujerido
 <img width=550px src="https://nvie.com/img/git-model@2x.png" alt="Gitflow">  
 By Vincent Driessen | 2010 | https://nvie.com/posts/a-successful-git-branching-model/
-
-### Imagem docker
-https://hub.docker.com/r/erivando/website-node
