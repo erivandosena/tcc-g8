@@ -8,6 +8,10 @@
 #   docker build -t erivando/website-node:latest --build-arg 'VERSION=1.0.0' .
 #   docker push erivando/website-node:latest
 #
+# Build Arm instructions:
+# docker buildx create --name armbuilder
+# docker buildx use armbuilder
+# docker buildx build --platform linux/amd64,linux/arm64/v7,linux/arm64/v8 -t erivando/website-node:latest --build-arg 'VERSION=1.0.0' --push .
 # Usage:
 #
 #   docker run -it --rm -d -p 8088:80 --name website erivando/website-node:latest
