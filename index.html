@@ -135,19 +135,28 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contato</h2>
-								<form id="contact-form">
+								<form id="contact-form" action="/send-email" method="post">
 									<div class="fields">
 										<div class="field half">
-											<label for="name">Nome</label>
+											<label for="name">Seu Nome</label>
 											<input type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
-											<label for="email">E-mail</label>
+											<label for="email">Seu E-mail</label>
 											<input type="text" name="email" id="email" />
 										</div>
 										<div class="field">
 											<label for="message">Mensagem</label>
 											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+										<div class="field half">
+											<label for="prof">Profissional/CV</label>
+											<select name="prof" id="prof">
+												<option value="" selected>Selecione...</option>
+												<option value="erivandosena@gmail.com">Erivando Sena</option>
+												<option value="micaelschutz04@gmail.com">Micael Schutz</option>
+												<option value="laertep@gmail.com">Laerte Porto</option>
+											</select>
 										</div>
 									</div>
 									<ul class="actions">
@@ -174,40 +183,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				document.getElementById("contact-form").addEventListener("submit", function(event) {
-					event.preventDefault();
-
-					var name = document.getElementById("name").value;
-					var email = document.getElementById("email").value;
-					var message = document.getElementById("message").value;
-
-					var data = {
-						name: name,
-						from: email,
-						message: message
-					};
-
-					fetch("https://api.getmovielist.com/api/sendmail", {
-						method: "POST",
-						headers: {
-							"Content-Type": "application/json",
-							"Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwiZW1haWwiOiJnaW8ifQ.DzjyyGonAeJ_hSaguKuk3NYEIkocfC9dTFaF9SSyNqY" // Adicione seu token aqui
-						},
-						body: JSON.stringify(data)
-					})
-					.then(function(response) {
-						if (response.ok) {
-							alert("Mensagem enviada com sucesso!");
-							document.getElementById("contact-form").reset();
-						} else {
-							throw new Error("Erro ao enviar a mensagem.");
-						}
-					})
-					.catch(function(error) {
-						alert(error.message);
-					});
-				});
-			</script>
 	</body>
 </html>
