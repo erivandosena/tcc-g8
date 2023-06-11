@@ -1,0 +1,104 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: website
+  
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: le-updevops-tls
+  namespace: website
+data:
+  tls.crt: ZnVsbGNoYWluLnBlbQ==
+  tls.key: cHJpdmtleS5wZW0=
+type: kubernetes.io/tls
+
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: website-app
+  namespace: website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: website-app
+  template:
+    metadata:
+      labels:
+        app: website-app
+    spec:
+      containers:
+      - name: website-app
+        image: erivando/website-node:latest
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 80
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "0.2"
+          limits:
+            memory: "256Gi"
+            cpu: "0.6"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: website-app
+  namespace: website
+  labels:
+    app: website-app
+  annotations:
+    metallb.universe.tf/address-pool: int-pool
+spec:
+  type: LoadBalancer
+  externalTrafficPolicy: Cluster
+  loadBalancerIP: 10.10.0.109
+  ports:
+  - name: node
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: website-app
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: website-app
+  namespace: website
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - updevops.com.br
+    - www.updevops.com.br
+    secretName: le-updevops-tls
+  rules:
+  - host: www.updevops.com.br
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: website-app
+            port:
+              number: 80
+      - path: /.well-known/acme-challenge
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: website-app
+            port:
+              number: 80
