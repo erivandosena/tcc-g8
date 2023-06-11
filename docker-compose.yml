@@ -30,9 +30,9 @@ services:
     image: erivando/website-node:latest
     container_name: website
     restart: always
-    user: "root:www-data"
+    user: "root:node"
     ports:
-      - "80:8080"
+      - "8083:80"
     networks:
       - developer
 

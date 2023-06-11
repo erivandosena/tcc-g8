@@ -1,5 +1,5 @@
-.git
 .vscode
+.git
 .gitignore
 .dockerignore
 LICENSE
