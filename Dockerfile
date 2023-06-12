@@ -66,10 +66,6 @@ COPY . .
 
 COPY --chown=node:node . .
 
-RUN echo "node ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/node && \
-  chmod 0440 /etc/sudoers.d/node && \
-  visudo -cf /etc/sudoers.d/node
-
 RUN echo "node ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 USER node
