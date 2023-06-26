@@ -11,6 +11,9 @@ Micael Schutz dos Santos
 **Mentor**  
 Rodolfo dos Santos Silva
 
+#### KANBAN
+[Quadro no gerenciamento de projeto Trello](https://trello.com/b/aZODSjkj/kanban-da-cloud)
+
 ### Gitflow
 <img width=400px src="https://nvie.com/img/git-model@2x.png" alt="Gitflow">
 
