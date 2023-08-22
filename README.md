@@ -9,7 +9,6 @@ Rodolfo dos Santos Silva
 #### KANBAN
 [Quadro no gerenciamento de projeto Trello](https://trello.com/b/aZODSjkj/kanban-da-cloud)
 
-<<<<<<< HEAD
 ### Gitflow
 <img width=400px src="https://nvie.com/img/git-model@2x.png" alt="Gitflow">
 
@@ -17,14 +16,3 @@ Rodolfo dos Santos Silva
 
 ### Imagem Docker
 https://hub.docker.com/r/erivando/website-node
-
-
-#### Certificate/TLS
-```console
-kubectl create secret -n website --dry-run=client tls le-updevops-tls --cert=fullchain.pem --key=privkey.pem --output yaml
-```
-=======
-### Gitflow sujerido
-<img width=550px src="https://nvie.com/img/git-model@2x.png" alt="Gitflow">  
-By Vincent Driessen | 2010 | https://nvie.com/posts/a-successful-git-branching-model/
->>>>>>> origin/main
