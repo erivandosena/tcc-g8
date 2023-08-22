@@ -1,0 +1,9 @@
+.vscode
+.git
+.gitignore
+.dockerignore
+LICENSE
+README.md
+Dockerfile
+docker-compose.yml
+deployment.yaml
